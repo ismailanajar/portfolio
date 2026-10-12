@@ -69,13 +69,35 @@ document.querySelectorAll('.shots').forEach(gallery => {
     });
   });
 });
-document.getElementById('lbClose').addEventListener('click', closeLightbox);
-document.getElementById('lbPrev').addEventListener('click', (e) => { e.stopPropagation(); stepLb(-1); });
-document.getElementById('lbNext').addEventListener('click', (e) => { e.stopPropagation(); stepLb(1); });
-lightbox.addEventListener('click', (e) => { if (e.target === lightbox) closeLightbox(); });
+document.getElementById('lbClose')?.addEventListener('click', closeLightbox);
+document.getElementById('lbPrev')?.addEventListener('click', (e) => { e.stopPropagation(); stepLb(-1); });
+document.getElementById('lbNext')?.addEventListener('click', (e) => { e.stopPropagation(); stepLb(1); });
+lightbox?.addEventListener('click', (e) => { if (e.target === lightbox) closeLightbox(); });
 document.addEventListener('keydown', (e) => {
-  if (!lightbox.classList.contains('open')) return;
+  if (!lightbox || !lightbox.classList.contains('open')) return;
   if (e.key === 'Escape') closeLightbox();
   if (e.key === 'ArrowRight') stepLb(1);
   if (e.key === 'ArrowLeft') stepLb(-1);
 });
+
+// Courses filter (courses.html)
+const filterBtns = document.querySelectorAll('.filter-btn');
+const courseGrid = document.getElementById('courseGrid');
+if (filterBtns.length && courseGrid) {
+  const cards = Array.from(courseGrid.querySelectorAll('.course-card'));
+  const empty = document.getElementById('courseEmpty');
+  filterBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      filterBtns.forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      const f = btn.dataset.filter;
+      let shown = 0;
+      cards.forEach(c => {
+        const show = f === 'all' || c.dataset.cat === f;
+        c.style.display = show ? '' : 'none';
+        if (show) shown++;
+      });
+      if (empty) empty.style.display = shown ? 'none' : 'block';
+    });
+  });
+}

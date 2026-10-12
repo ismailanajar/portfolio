@@ -56,6 +56,21 @@ backend development, performance optimization, testing, and deployment.
 - Certificate for Claude Code in Action
 - Certificate for Claude 101
 
+## Courses & certifications
+
+Full list: https://ismail-anajar.vercel.app/courses.html
+
+- Certificates (AI): Claude Code in Action, Claude 101 (Anthropic/Skilljar)
+- AI courses: Local AI, AI Engineering (master.dev)
+- Frontend: Vanilla JS Apps, PWAs, CSS Fundamentals (master.dev),
+  Joy of React, You Don't Know JS
+- Backend: NestJS, Microservices with Node.js and React, Redis (Udemy),
+  The Node Book, node.win, Networking / Backend / OS (Hussein Nasser),
+  SQL for Data Analysis
+- Tools & CS: Everything Git (master.dev), Docker (Dolfined),
+  Docker and Kubernetes, Linux (YouTube), IT Fundamentals (Dolfined),
+  Advanced Programming in the UNIX Environment, The Linux Programming Interface
+
 ## Contact
 
 - Email: ismailanajar52@gmail.com
