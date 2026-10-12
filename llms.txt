@@ -1,0 +1,65 @@
+# Ismail Anajar — Full-Stack Developer
+
+> Portfolio of Ismail Anajar, Full-Stack Developer from Casablanca, Morocco.
+> Primary specialization: frontend (React, Next.js). Backend: Node.js, NestJS.
+
+## Profile
+
+Full-Stack Developer with 9+ years of experience building high-performance,
+responsive, and maintainable web applications. Comfortable across the full
+development lifecycle: requirements, frontend architecture, API integration,
+backend development, performance optimization, testing, and deployment.
+
+## Experience
+
+- **Full-Stack Developer — Awnup** (Morocco, end-to-end product ownership):
+  built the Awnup service marketplace end-to-end (frontend, backend,
+  database/API layer, admin dashboard). Live: https://awnup.ma/fr
+- **Frontend Developer — Astrovia** (web applications and digital products):
+  e-commerce, loyalty programs, marketing platforms, internal business apps.
+- **Full-Stack / Frontend Developer — Freelance**: web projects for small
+  businesses (supermarkets, medical practices, pet businesses, e-commerce,
+  marketing): requirements, architecture, development, API integration,
+  database, testing, deployment, maintenance.
+
+## Selected projects
+
+- **Awnup — Service Marketplace**: production marketplace connecting customers
+  with service providers (public app + admin tools). Stack: Next.js, React,
+  TypeScript, Hono.js, Prisma, PostgreSQL, Tailwind CSS, Git.
+- **CMS Page Builder (personal project)**: admin dashboard + public template
+  engine via typed Hono.js API; drag-and-drop, real-time preview, customizable
+  components. Live demo: https://page-builder-two.vercel.app/ Stack: Next.js,
+  TypeScript, PostgreSQL, Prisma, Tailwind CSS.
+
+## Technical skills
+
+- Frontend: HTML5, CSS3, TypeScript, React, Next.js, TanStack Start
+- Backend: Node.js, NestJS, REST APIs
+- Database: PostgreSQL, Redis
+- Architecture & Performance: SSR, SSG, ISR, CSR, caching, lazy loading,
+  Core Web Vitals, SEO, accessibility, scalable architecture
+- Tools & DevOps: Linux, Git, GitHub, Docker, CI/CD
+- AI Engineering: LLM integration, prompt engineering, RAG, AI agents,
+  function calling, context engineering, evals, Gen UI, local LLMs,
+  Hugging Face, quantization, Claude Code
+  (studying: AI Engineering Fundamentals by Hendrixer,
+  Getting Started With Local AI Setup by WebDevSimplified)
+
+## Education & languages
+
+- Bachelor of Physics Science — Ibn Zohr University, Agadir, Morocco (2014–2017)
+- Arabic: Native. English: Conversational.
+
+## Certifications
+
+- Certificate for Claude Code in Action
+- Certificate for Claude 101
+
+## Contact
+
+- Email: ismailanajar52@gmail.com
+- Phone/WhatsApp: +212 776 184 990
+- GitHub: https://github.com/ismailanajar
+- LinkedIn: https://www.linkedin.com/in/ismail-anajar-7584b343a
+- Location: Casablanca, Morocco
