@@ -49,7 +49,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700;800&family=Bricolage+Grotesque:opsz,wght@12..96,700;12..96,800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css?v=33" />
+<link rel="stylesheet" href="styles.css?v=34" />
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%23234df1'/><text x='50' y='68' font-size='55' text-anchor='middle' fill='%23FACC15' font-family='Arial Black'>IA</text></svg>">
 </head>
 <body>
@@ -57,21 +57,34 @@
 <header class="nav" id="top">
   <div class="container nav-inner">
     <a href="#top" class="logo"><span class="logo-box">I<b>A</b></span><span class="logo-text">Ismail<em>.dev</em></span></a>
-    <nav class="nav-links" id="navLinks">
-      <a href="#profile">Profile</a>
-      <a href="#experience">Experience</a>
-      <a href="#projects">Projects</a>
-      <a href="#skills">Skills</a>
-      <a href="#education">Education</a>
-      <a href="#courses">Courses</a>
-      <a href="#contact" class="nav-box">Contact Us</a>
+    <nav class="nav-links" id="navLinks" aria-label="Primary">
+      <div class="nav-drawer-head">
+        <span class="nav-drawer-title">Menu</span>
+        <span class="nav-drawer-sub">Ismail.dev — navigate</span>
+      </div>
+      <a href="#profile"><span class="nav-num">01</span>Profile</a>
+      <a href="#experience"><span class="nav-num">02</span>Experience</a>
+      <a href="#projects"><span class="nav-num">03</span>Projects</a>
+      <a href="#skills"><span class="nav-num">04</span>Skills</a>
+      <a href="#education"><span class="nav-num">05</span>Education</a>
+      <a href="#courses"><span class="nav-num">06</span>Courses</a>
+      <a href="#contact" class="nav-box">Contact Us <span aria-hidden="true">→</span></a>
+      <div class="nav-mobile-extra">
+        <div class="nav-socials">
+          <a href="https://github.com/ismailanajar" target="_blank" rel="noopener">GitHub ↗</a>
+          <a href="https://www.linkedin.com/in/ismail-anajar-7584b343a" target="_blank" rel="noopener">LinkedIn ↗</a>
+          <a href="mailto:ismailanajar52@gmail.com">Email ↗</a>
+        </div>
+        <p>Casablanca, Morocco — available for work</p>
+      </div>
     </nav>
     <div class="nav-actions">
       <a class="nav-text" href="https://github.com/ismailanajar" target="_blank" rel="noopener">GitHub ↗</a>
       <a class="nav-text" href="https://www.linkedin.com/in/ismail-anajar-7584b343a" target="_blank" rel="noopener">LinkedIn ↗</a>
-      <button class="hamburger" id="hamburger" aria-label="Menu">☰</button>
+      <button class="hamburger" id="hamburger" aria-label="Menu" aria-expanded="false" aria-controls="navLinks"><span></span><span></span><span></span></button>
     </div>
   </div>
+  <div class="nav-backdrop" id="navBackdrop" aria-hidden="true"></div>
 </header>
 
 <!-- HERO : NAME + TITLE + CONTACT (mn CV jdida) -->
@@ -370,6 +383,6 @@
   <button class="lb-next" id="lbNext" aria-label="Next">›</button>
 </div>
 <button id="toTop" aria-label="Back to top">↑</button>
-<script src="script.js?v=2"></script>
+<script src="script.js?v=3"></script>
 </body>
 </html>

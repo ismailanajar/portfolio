@@ -1,9 +1,26 @@
-// Mobile nav
+// Modern mobile drawer nav
 const hamburger = document.getElementById('hamburger');
 const navLinks = document.getElementById('navLinks');
-if (hamburger) {
-  hamburger.addEventListener('click', () => navLinks.classList.toggle('open'));
-  navLinks.querySelectorAll('a').forEach(a => a.addEventListener('click', () => navLinks.classList.remove('open')));
+const navBackdrop = document.getElementById('navBackdrop');
+function setMenu(open) {
+  if (!navLinks || !hamburger) return;
+  navLinks.classList.toggle('open', open);
+  navBackdrop?.classList.toggle('show', open);
+  hamburger.classList.toggle('active', open);
+  hamburger.setAttribute('aria-expanded', open ? 'true' : 'false');
+  hamburger.setAttribute('aria-label', open ? 'Close menu' : 'Menu');
+  document.body.classList.toggle('no-scroll', open);
+}
+if (hamburger && navLinks) {
+  hamburger.addEventListener('click', () => setMenu(!navLinks.classList.contains('open')));
+  navBackdrop?.addEventListener('click', () => setMenu(false));
+  navLinks.querySelectorAll('a').forEach(a => a.addEventListener('click', () => setMenu(false)));
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && navLinks.classList.contains('open')) setMenu(false);
+  });
+  window.matchMedia('(min-width: 901px)').addEventListener?.('change', (e) => {
+    if (e.matches) setMenu(false);
+  });
 }
 
 // Reveal on scroll
